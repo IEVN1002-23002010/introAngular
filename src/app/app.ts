@@ -7,5 +7,20 @@ import { Component, signal } from '@angular/core';
   templateUrl: './app.html',
 })
 export class App {
-  protected readonly title = signal('introAngular');
+  
+  titulo:string="Christofer Villaseñor"
+  duplicaNumero(num:number):number{
+    return num*2
+  }
+
+  pelicula={
+      titulo:"El pádrino",
+      anio:1972,
+      genero:"Crimen/Drama",
+      fechaLanzamiento:new Date(),
+      precio:345
+    }
+
 }
+
+
